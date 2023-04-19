@@ -14,8 +14,6 @@ class DataBase {
           "CREATE TABLE pessoas (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome TEXT, senha TEXT, email TEXT, telefone TEXT)");
     });
 
-    print('Banco: ' + bd.isOpen.toString());
-
     return bd;
   }
 

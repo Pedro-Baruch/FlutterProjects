@@ -46,7 +46,6 @@ class _ListaPessoasState extends State<ListaPessoas> {
               itemCount: _pessoas.length,
               itemBuilder: (BuildContext context, int index) {
                 return Container(
-                  
                   padding: const EdgeInsets.all(20),
                   child: Column(
                     children: <Widget>[
