@@ -34,7 +34,7 @@ class _RegistroState extends State<Registro> {
 
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => ListaPessoas(),)
+      MaterialPageRoute(builder: (context) => const ListaPessoas(),)
       );
   }
   
@@ -42,7 +42,7 @@ class _RegistroState extends State<Registro> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Registro Pessoas"),
+        title: const Text("Registro Pessoas"),
       ),
       body: SingleChildScrollView(
           padding: const EdgeInsets.only(left: 20, right: 20, top: 30),
@@ -53,7 +53,7 @@ class _RegistroState extends State<Registro> {
                 radius: 100,
                 backgroundImage: NetworkImage(
                     'https://play-lh.googleusercontent.com/ahJtMe0vfOlAu1XJVQ6rcaGrQBgtrEZQefHy7SXB7jpijKhu1Kkox90XDuH8RmcBOXNn'),
-                backgroundColor: Colors.green,
+                backgroundColor: Colors.orange,
               ),
               TextFormField(
                 keyboardType: TextInputType.name,

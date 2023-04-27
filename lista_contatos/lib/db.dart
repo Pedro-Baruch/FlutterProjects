@@ -33,6 +33,12 @@ class DataBase {
     return id;
   }
 
+  static Future<List<Map<String, dynamic>>> getPessoaById(int id) async{
+    final db = await DataBase.db();
+
+    return db.query('pessoas',where : 'id = ?', whereArgs: [id]);
+  }
+
   static Future<List<Map<String, dynamic>>> getPessoas() async {
     final db = await DataBase.db();
 
